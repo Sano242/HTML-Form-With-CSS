@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Sangsoo Park">
+  <title>Form</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+  <div class="title">
+    <h1>Fill Out Your Profile Form</h1>
+  </div>
+
+  <hr>
+  
+  <form action="results.html" method="GET">
+
+    <div class="title"><h2>Basic Information</h2></div>
+    
+    <div>
+
+      <label>
+        User Name:
+        <input type="text" name="username" id="username" required>
+      </label>
+      
+    </div>
+
+    <div>
+
+      <label>
+        Password:
+        <input type="password" name="password" id="password" required>
+      </label>
+      
+    </div>
+    
+    <div>
+
+      <label>
+            First Name:
+          <input type="text" name="first-Name" id="firstName" placeholder="First Name" required>
+      </label>
+
+      <label>
+            Last Name:
+          <input type="text" name="last-Name" id="lastName" placeholder="Last Name" required>
+      </label>
+      
+    </div>
+
+    <div>
+      <label>
+        Age
+        <input type="number" name="age" id="age" placeholder="Enter Age" required>
+      </label>
+    </div>
+
+    <div> 
+      <label>
+        Birthday
+        <input type="date" name="birthday" id="birthday" required>
+      </label>
+    </div>
+
+    <div>
+      <label>
+        Gender
+        <select name="gender" id="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </label>
+    </div>
+
+    <div>
+
+      <label>
+        Email:
+          <input type="email" name="email" id="email" placeholder="Email" required>
+      </label>
+
+    </div>
+
+    <div>
+
+      <label>
+        Phone Number:
+          <input type="tel" name="phone-Number" id="phoneNum" placeholder="000-000-0000" required>
+      </label>
+
+    </div>
+
+    <hr>
+
+    <div class="title">
+      Favorite Season:
+    </div>
+
+    <div>
+
+      <label>
+          <input type="checkbox" name="fall" id="fall">
+          Fall
+      </label>
+      
+    </div>
+
+    <div>
+
+      <label>
+          <input type="checkbox" name="winter" id="winter">
+          Winter
+      </label>
+
+    </div>
+
+    <div>
+
+      <label>
+          <input type="checkbox" name="spring" id="spring">
+          Spring
+      </label>
+
+    </div>
+
+    <div>
+
+      <label>
+          <input type="checkbox" name="summer" id="summer">
+          Summer
+      </label>
+
+    </div>
+
+    <div class="title">Daytime or Nighttime </div>
+
+    <div>      
+      
+      <label>
+        <input type="radio" name="night" id="night">
+          Night
+      </label>
+
+      <label>
+        <input type="radio" name="daytime" id="daytime">
+        Daytime
+      </label>
+    
+    </div>
+
+    <div class="title">Bio</div>
+    
+    <div>
+      <textarea name="bio" id="bio" cols="30" rows="10" placeholder="Tell us about yourself"></textarea>
+    </div>
+
+    <div class="title">Input Your Social Media Page URL</div>
+
+    <div>
+      <label>URL:</label>
+      <input type="url" name ="webUrl" id="webUrl">
+    </div>
+
+    <div class="title">Pick your favorite color:</div>
+
+    <div>
+
+      <input type="color" name="color" id="color">
+      
+    </div>
+
+    <div>
+      <input  type="hidden" name="sessionID" id="sessionID" value="12345">
+    </div>
+
+    <hr>
+    <div>
+      <button type="reset">Reset</button>
+      <button type="submit">Submit</button>
+    </div>
+    <hr>
+    
+  </form>
+
+  <div>File Upload:</div>
+
+  <div>
+    <form action="results.html" method="post">
+        <input type="file" name="file" id="file">
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

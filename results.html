@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Sangsoo Park">
+  <title>Results</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+
+  
+<body>
+  <div class="title">
+    <h1>Your Information</h1>
+  </div>
+
+  <div class="results" id='results'></div>
+  
+  <a href="index.html">Back to From</a>
+</body>
+
+<script>
+
+  // Variable for manipulating <div> element in html.
+  const resultsList = document.getElementById('results');
+
+  // Loop that collects form input and name and adds it to the <div> element with every form getting its own line.
+  new URLSearchParams(window.location.search).forEach((username, password) => {
+
+    let type = password.charAt(0).toUpperCase() + password.slice(1);
+
+    resultsList.append(type + `: ${username}\n`);
+    resultsList.append(document.createElement('br'));
+ 
+  })
+
+  
+</script>
+
+</html>
